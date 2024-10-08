@@ -1,0 +1,27 @@
+.k1 {
+  width: 600px;
+  height: 100px;
+  background-color: goldenrod;  
+}
+.wr {
+  width: 600px;
+  height: 250px;
+  display:flex;
+}
+.k2 {
+  background-color: red;
+}
+.k3 {
+  background-color: yellowgreen;
+}
+.k4 {
+  background-color: blue;
+}
+.k5 {
+  background-color: black;
+}
+.k6 {
+  width: 600px;
+  height: 100px;
+  background-color: goldenrod; 
+}

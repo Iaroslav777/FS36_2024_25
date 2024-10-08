@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Overflow Example</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./sec2.html">Display & Visibility</a></li>
+          <li><a href="./sec3.html">Float</a></li>
+          <li><a href="./sec4.html">Transform, Filter, Keyframe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="section" style="overflow: auto; height: 100px">
+      <div style="height: 200px">
+        Content with overflow auto. This text should scroll inside its
+        container.
+      </div>
+    </div>
+    <div class="section" style="overflow: hidden; height: 100px">
+      <div style="height: 200px">
+        Content with overflow hidden. This text should be clipped.
+      </div>
+    </div>
+    <div class="section" style="overflow: scroll; height: 100px">
+      <div style="height: 200px">
+        Content with overflow scroll. This text should have scrollbars.
+      </div>
+    </div>
+  </body>
+</html>

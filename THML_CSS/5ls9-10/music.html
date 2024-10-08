@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Музыканты</title>
+  </head>
+  <body>
+    <style>
+      .cub{
+        width: 100px;
+        height: 100px;
+      }
+      .c1{
+        background-color: #10a0ff;
+        position: fixed;
+        left: 300px;
+        bottom: 50px;
+      }
+      .c2{
+        background-color: #8d00cf;
+        position: sticky;
+      }
+      .c3{
+        position: absolute;
+        background-color: #aeff00;
+        left: 150px;
+        bottom: 9%;
+      }
+      a:hover{
+        background-color: #10a0ff;
+      }
+      a:hover::after{
+        background-color: #ff00b3;
+      }
+      
+      img{
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 0px 10px 0 0;
+        box-shadow: 10px 15px 50px rgba(171, 215, 234, 0.903);
+      }
+      .tittle{
+        margin: 20px;
+        color: #a200fa;
+        background-color: #aeff00;
+        text-transform:uppercase;
+        position: absolute;
+        left: 180px;
+        top: -30px;
+      }
+      body{
+        width: 600px;
+        border: 2px solid #a200fa;
+        background-color: #d0e5dc;
+      }
+      
+.card{
+  position: relative;
+  width: 500px;
+  border: 5px dotted blueviolet;
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #ebfffd;
+  box-shadow: 10px -10px 30px rgb(139, 233, 213);
+}
+.rr{  
+  position: absolute;
+  margin-bottom: 20px;
+}
+#test{
+  position: absolute;
+  top: -30px;
+  color: #8d00cf;
+  background-color: #d4edfd;
+}
+    </style>
+    <a href="./tab1.html">Таблица 1</a>
+    <a href="./tab2.html">Таблица 2</a>
+    <a href="./tab3.html">Таблица 3</a>
+    
+<div class="card">
+<span class="tittle">Майкл Джо́зеф Дже́ксон</span>
+<img src="./1.jpg" alt="">
+<p>
+     — американський співак, танцюрист, кіноактор, автор пісень, який досяг міжнародної популярності у віці 12 років як соліст дитячого гурту «П'ятірка Джексонів», а згодом став одним із комерційно найуспішніших сольних артистів в історії.</p>
+  </p>
+  <span class="rr">Show details..</span>
+</div>
+<div class="card">
+<span class="tittle">Віктор Лемонте Вутен</span>
+<img src="./2.webp" alt="">
+<p> — американський басист, автор пісень і продюсер. Він був басистом Бели Флека та Flecktones з моменту створення групи в 1988 році та учасником гурту SMV разом із двома іншими басистами, Стенлі Кларком і Маркусом Міллером. З 2017 по 2019 рік записувався як басист метал-гурту Nitro.</p>
+<span class="rr">Show details..</span>
+</div>
+<div class="card">
+  <span class="tittle">Вільям Генрі Маркус Міллер молодший</span>
+<img src="./3.webp" alt="">
+  <p>Вільям Генрі Маркус Міллер молодший — американський джазовий композитор, продюсер та мультиінструменталіст, більше знаний, як бас-гітарист.</p>
+  <span class="rr">Show details..</span>
+  <p id="test">Test</p>
+</div>
+   <div class=" cub c1"></div>
+   <div class="cub c2"></div>
+   <div class="cub c3"></div>
+
+
+
+  </body>
+</html>

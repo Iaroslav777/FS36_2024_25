@@ -1,0 +1,232 @@
+body{
+  display: grid;
+place-items: center;
+}
+.wr{    
+  display: grid;
+  width: 740px;
+ 
+  grid-template: repeat(32,20px)/repeat(18,1fr); 
+  border: 3px solid red; 
+  text-align: center;
+}
+.a{
+  background-color: #fe3ed8;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 1;
+  grid-row-end: 12;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.b{
+  width: 80%;
+  height: 70%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;  
+  /* justify-self: center;
+  align-self: center; */
+  justify-items: center;
+  align-items: center;
+}
+.c{
+  width: 70%;
+  height: 40%;
+  background-color: black;
+}
+/* ===================================== */
+.i{
+  background-color: darkgray;
+  display: grid;
+
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 12;
+  grid-row-end: 19;
+}
+.d{
+  
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 13;
+  grid-row-end: 18;
+  
+}
+.e {
+    background-color: red;
+}
+.f {
+    background-color: orange;
+}
+.g {
+    background-color: cyan;
+}
+.h {
+    background-color: yellow;
+}
+/* ========================================= */
+.fot{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 19;
+  grid-row-end: 33;
+  grid-template-columns: repeat(3,1fr);
+}
+.b1{
+  display: grid;
+  background-color: forestgreen;
+  grid-template-rows: 60px 1fr;
+}
+.m{
+  display: grid;
+  background-color: goldenrod;
+  justify-self: center;
+  width: 80%;
+  grid-template-rows: 40px 1fr;
+}
+.wrno{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.n{
+  background-color: #ff38de;
+}
+.o{
+  background-color: yellow;
+}
+/* ====================================== */
+.b2{
+  display: grid;
+  background-color: cyan;
+  grid-template-rows: 60px 1fr;
+}
+.p{
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 22;
+  grid-row-end: 33;
+  background-color: red;
+}
+.q{
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 22;
+  grid-row-end: 33;
+  background-color: yellow;
+}
+.s{
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 24;
+  grid-row-end: 33;
+  background-color: goldenrod;
+}
+.t{
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 29;
+  grid-row-end: 33;
+  background-color: red;
+}
+.u{
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 22;
+  grid-row-end: 33;
+  background-color: goldenrod;
+}
+/* ========================== */
+.b3{
+  display: grid;
+  background-color: blue;
+  grid-column-start: 13;
+  grid-column-end: 19;
+  grid-row-start: 19;
+  grid-row-end: 33;
+}
+.v1{
+  background-color: cyan;
+  display: grid;
+  grid-column-start: 13;
+  grid-column-end: 15;
+  grid-row-start: 29;
+  grid-row-end: 33;
+}
+.w1{
+  background-color: yellow;
+  display: grid;
+  grid-column-start: 15;
+  grid-column-end: 17;
+  grid-row-start: 26;
+  grid-row-end: 32;
+}
+/* .x {
+  background-color: goldenrod;
+  display: grid; 
+  grid-column-start: 17;
+  grid-column-end: 19;
+  grid-row-start: 24;
+  grid-row-end: 29;
+}
+.text1 {
+  font-style: italic;
+  grid-column-start: 18;
+  grid-column-end: 19;
+  grid-row-start: 25;
+  grid-row-end: 26;
+  color: rgb(87, 213, 255);
+  background-color: black;
+}
+.text2 {
+  font-style: italic;
+  grid-column-start: 17;
+  grid-column-end: 18;
+  grid-row-start: 27;
+  grid-row-end: 28;
+  color: rgb(87, 213, 255);
+  background-color: black;
+} */
+
+.x {
+  background-color: goldenrod;
+  display: grid;
+  grid-column-start: 17;
+  grid-column-end: 19;
+  grid-row-start: 24;
+  grid-row-end: 29;
+  grid-template-rows: repeat(5, 1fr); /* 5 строк */
+  grid-template-columns: 1fr 1fr 1fr; /* 2 колонки */
+}
+
+.text1 {
+  font-style: italic;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-left: 17px solid black;
+  border-right: 17px solid black;
+
+  grid-row: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+  color: rgb(87, 213, 255);
+  background-color: black;
+}
+
+.text2 {
+  font-style: italic;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  border-left: 17px solid black;
+  border-right: 19px solid black;
+  color: rgb(87, 213, 255);
+  background-color: black;
+}
+/* долго разбирался как текст уместить:) */

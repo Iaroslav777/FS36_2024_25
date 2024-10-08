@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма-фільтр</title>
+    <style>
+      iframe {
+        width: 100%;
+        border: none;
+        box-shadow: 0 0 10px rgba(120, 121, 120, 0.864);
+      }
+
+      label {
+        margin-right: 10px;
+      }
+      input,
+      select {
+        margin-bottom: 10px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="checkbox"],
+      input[type="text"] {
+        margin-right: 10px;
+      }
+      select,
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="product_type">Тип продукту:</label>
+      <select id="product_type" name="product_type">
+        <option value="phone">Телефон</option>
+        <option value="laptop">Ноутбук</option>
+        <option value="vacuum">Пилесос</option>
+        <option value="charger">Зарядка</option></select
+      ><br />
+      <fieldset>
+        <legend>Потужність</legend>
+        <label><input type="checkbox" name="power" value="15w" /> 15w</label>
+        <label><input type="checkbox" name="power" value="25w" /> 25w</label>
+        <label><input type="checkbox" name="power" value="65w" /> 65w</label>
+        <label><input type="checkbox" name="power" value="100w" /> 100w</label>
+        <label><input type="checkbox" name="power" value="200w" /> 200w</label>
+      </fieldset>
+      <fieldset>
+        <legend>Марка</legend>
+        <label
+          ><input type="checkbox" name="brand" value="samsung" /> Самсунг</label
+        >
+        <label><input type="checkbox" name="brand" value="lg" /> LG</label>
+        <label><input type="checkbox" name="brand" value="asus" /> ASUS</label>
+        <label
+          ><input type="checkbox" name="brand" value="lenovo" /> Lenovo</label
+        >
+      </fieldset>
+      <label for="sorting">Сортування:</label>
+      <select id="sorting" name="sorting">
+        <option value="cheap">Від дешевих</option>
+        <option value="expensive">Від дорогих</option>
+        <option value="rating">По рейтингу</option></select
+      ><br />
+      <label for="model_name">Назва моделі:</label>
+      <input type="text" id="model_name" name="model_name" /><br />
+      <button type="submit">Фільтрувати</button>
+    </form>
+
+    <iframe src="./Filter.html" width="100%" height="500px"></iframe>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+
+
+ - Доверстати макет використовуючи код з лекції (використовувати розширення екрану 1600px)
+
+ https://www.figma.com/design/yzmVIfsMwde0hv7xzjJiS1/KiddieFlix?node-id=0-1&node-type=canvas&t=HqX5kkdL3YviOcRS-0

@@ -1,0 +1,12 @@
+body{
+  background-color: #e0e4db;
+  /* opacity: 45%; */
+}
+.navigation {
+  text-align: center;
+  background-color: #97f8ae;
+  padding: 15px 20px;
+}
+.navigation a {
+  margin: 0 15px;
+}

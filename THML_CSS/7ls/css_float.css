@@ -1,0 +1,35 @@
+.or1 {
+  width: 600px;
+  height: 100px;
+  background-color: rgb(250, 184, 2);
+}
+.r {
+width: 150px;
+height: 250px;
+background: red;
+float: left;
+}
+.g {
+  width: 150px;
+  height: 250px;
+  background-color: greenyellow;
+  float: left;
+}
+.b {
+  width: 150px;
+  height: 250px;
+  background-color: blue;
+  float: left;
+}
+.bk {
+  width: 150px;
+  height: 250px;
+  background-color: black;
+  float:left;
+}
+.or2 {
+  width: 600px;
+  height: 100px;
+  background-color: #ffc401;
+  clear: both;
+}
