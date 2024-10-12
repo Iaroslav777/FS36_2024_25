@@ -56,22 +56,89 @@ for(let i = arr3[0];i <= arr3[1];i++){
 }
 ///////////////// 4 ///////////////////////
 //4. парні:[1, 5, true, 'hello', false, null, 'iiii', 54, null]
+// for
 console.log("4.)\nпарні:[1, 5, true, 'hello', false, null, 'iiii', 54, null]");
+console.log("4.for")
 let arr4 = [1, 5, true, 'hello', false, null, 'iiii', 54, null];
-for (let i = 0; i < arr4.length; i++){
+for(let i = 0; i< arr4.length; i++){
   if(i%2===1){
     console.log(arr4[i]);
   }
 }
+//for of
+console.log("4.for of")
+let iter = 0;
+for(let i of arr4){
+  if(iter%2===1){
+    console.log(i)    
+  }
+    iter++;
+}
+// for in
+console.log("4.for in")
+for (let i in arr4){
+  if(i%2===1)
+    console.log(i, arr4[i])
+}
+//while
+console.log("4.while");
+iter = 0;
+while(iter<arr4.length){
+  if(iter%2===1){
+    console.log(arr4[iter]);
+  }
+  iter++;
+}
+//do while
+console.log("4.do while");
+iter=0;
+do{
+if(iter%2===1)
+  console.log(arr4[iter])
+iter++;
+}while(iter<arr4.length)
 ///////////////// 5 ///////////////////////
-//5. НЕ парні:[1, 5, true, 'hello', false, null, 'iiii', 54, null]
-console.log("5.)\n НЕ парні:[1, 5, true, 'hello', false, null, 'iiii', 54, null]");
-let arr5 = [1, 5, true, 'hello', false, null, 'iiii', 54, null];
-for (let i = 0; i < arr5.length; i++){
+// for
+console.log("5.)\n  НЕ парні:[1, 5, true, 'hello', false, null, 'iiii', 54, null]");
+console.log("5.for")
+arr4 = [1, 5, true, 'hello', false, null, 'iiii', 54, null];
+for(let i = 0; i< arr4.length; i++){
   if(i%2===0){
-    console.log(arr5[i]);
+    console.log(arr4[i]);
   }
 }
+//for of
+console.log("5.for of")
+iter = 0;
+for(let i of arr4){
+  if(iter%2===0){
+    console.log(i)    
+  }
+    iter++;
+}
+// for in
+console.log("5.for in")
+for (let i in arr4){
+  if(i%2===0)
+    console.log(i, arr4[i])
+}
+//while
+console.log("5.while");
+iter = 0;
+while(iter<arr4.length){
+  if(iter%2===0){
+    console.log(arr4[iter]);
+  }
+  iter++;
+}
+//do while
+console.log("5.do while");
+iter=0;
+do{
+if(iter%2===0)
+  console.log(arr4[iter])
+iter++;
+}while(iter<arr4.length)
 ///////////////// 6 ///////////////////////
 // 6 for
 let arr6 = [1, 2, 4, 2, 3, 55, 66, 777, 12];
