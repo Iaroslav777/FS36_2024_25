@@ -1,0 +1,240 @@
+/* 1 єкран */
+
+position: absolute;
+width: 1760px;
+height: 1216px;
+left: 80px;
+top: 40px;
+
+
+
+/* h1 */
+
+position: absolute;
+width: 1760px;
+height: 465px;
+left: 0px;
+top: 134px;
+
+
+
+/* Golf is a way to enjoy nature and the game at the same time */
+
+position: absolute;
+width: 1760px;
+height: 465px;
+left: calc(50% - 1760px/2);
+top: 134px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 128px;
+line-height: 155px;
+text-align: center;
+letter-spacing: -0.005em;
+text-transform: uppercase;
+
+color: #100F0F;
+
+
+
+/* кнопка */
+
+position: absolute;
+width: 232.74px;
+height: 105.75px;
+left: 113px;
+top: 152px;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 225.12px;
+height: 81.33px;
+left: 113px;
+top: 176.92px;
+
+background: #1B4607;
+transform: rotate(-6.35deg);
+
+
+/* Fairway */
+
+position: absolute;
+width: 217px;
+height: 57px;
+left: 120.32px;
+top: 180.04px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 46.9983px;
+line-height: 57px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #FEFEFE;
+
+transform: rotate(-1.68deg);
+
+
+/* фото / головна */
+
+position: absolute;
+width: 1759px;
+height: 517px;
+left: 1759px;
+top: 699px;
+
+background: url();
+border-radius: 32px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* кнопка 2 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 203px;
+height: 58px;
+left: 221px;
+top: 1118px;
+
+border: 2px solid #FEFEFE;
+border-radius: 200px;
+
+
+/* MEMBER ACCESS */
+
+width: 169px;
+height: 23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.01em;
+
+color: #FEFEFE;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* кнопка 4 */
+
+position: absolute;
+width: 225px;
+height: 225px;
+left: 1531px;
+top: 699px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 225px;
+height: 225px;
+left: 1531px;
+top: 699px;
+
+background: #100F0F;
+
+
+/* Arrow 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 80px;
+height: 0px;
+left: 1644px;
+top: 772px;
+
+border: 5px solid #FEFEFE;
+transform: rotate(90deg);
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 315px;
+height: 100px;
+left: 0px;
+top: 468px;
+
+background: url();
+border-radius: 100px;
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 319px;
+height: 100px;
+left: 1441px;
+top: 468px;
+
+background: url();
+border-radius: 100px;
+
+
+/* кнопка 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 160px;
+height: 58px;
+left: 41px;
+top: 1118px;
+
+background: #FEFEFE;
+border-radius: 200px;
+
+
+/* BOOK A TIME */
+
+width: 128px;
+height: 23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.01em;
+
+color: #100F0F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

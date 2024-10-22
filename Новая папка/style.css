@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header, .footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.offer-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.offer-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
