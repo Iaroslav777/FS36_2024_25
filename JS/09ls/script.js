@@ -1,40 +1,32 @@
 // 1 - Напишіть 5 прикладів анонімної функції
 console.log("1.- Напишіть 5 прикладів анонімної функції");
 //1.1 приклад
-// function ask(q1, f1, f2) {
-//   confirm(q1) ? f1() : f2();
-// }
+console.log("1.1 перший приклад");
 
-// ask(
-//   "1 завдання 1 приклад\nВи згодні?",
-//   function () {
-//     alert("Так, ви згодні");
-//   },
-//   function () {
-//     alert("Ні, ви не згодні");
-//   }
-// );
+((q1, f1, f2) => {
+  confirm(q1) ? f1() : f2();
+})(
+  "1 завдання 1 приклад\nВи згодні?",
+  () => alert("Так, ви згодні"),
+  function () {
+    alert("Ні, ви не згодні");
+  }
+);
 
 //1.2
-const temp12 = function (num) {
+(function (num) {
   console.log(`${num}.2 другий приклад`);
-};
-temp12(1);
+})(1);
 
 //1.3
-let num1 = 5;
-let num2 = 7;
-let func13 = (num1, num2) => {
-  num1 + num2;
+((num1, num2) => {
   console.log(num1 + "." + (num1 + num2), "третій приклад ");
-};
-func13(1, 2);
+})(1, 2);
 
 //1.4
-function name14(temp) {
+(function (temp) {
   temp();
-}
-name14(function () {
+})(() => {
   console.log("1.4 четвертий приклад");
 });
 
