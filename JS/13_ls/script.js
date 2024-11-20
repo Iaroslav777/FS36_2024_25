@@ -1,111 +1,207 @@
-//1. .find() Знайдіть перший елемент масиву чисел, який більший за 30
+let obj3 = {
+  key1: 111,
+  key2: "222",
+  key3: true,
+};
 
-const arr1 = [3, 77, 5, 0, -5, 333];
-const res1 = arr1.find((a) => a > 30);
-console.log("//1. .find() більший за 30\n", res1);
+//Object.values()
+let test = Object.values(obj3);
+console.log("Object.values()", test);
 
-//2. .random() Виведіть випадковий елемент з масиву імен
+//Object.keys()
+let temp = Object.keys(obj3);
+console.log("Object.keys()", temp);
 
-const a2 = ["Олена", "Петро", "Степан", "Ярослав"];
-let arr2Length = a2.length;
-const r2 = a2[Math.floor(Math.random() * arr2Length)];
-console.log("\n//2. .random() з масиву імен\n", a2, "\n", r2);
+//Object.entries()
+temp = Object.entries(obj3);
+console.log("Object.entries()", temp);
 
-//3. .findIndex() Визначте індекс першого елемента '5' в масиві чисел
+//Object.freeze()
+temp = Object.freeze(obj3);
+console.log("Object.freeze()", temp);
+temp = Object.isFrozen(obj3);
+console.log("Object.isFrozen()", temp);
 
-const el = 5;
-const a3 = [3, 77, 5, 0, -5, 333];
-const r3 = a3.findIndex((e, i) => e === el);
-console.log("\n//3. .findIndex() індекс першого елемента '5'", a3, "\n", r3);
+//Object.seal()
+temp = Object.seal(obj3);
+console.log("Object.seal()", temp);
+temp = Object.isSealed(obj3);
+console.log("Object.isSealed()", temp);
 
-//4. .indexOf() Знайдіть індекс першої зустрічі елемента "Львів" в масиві
+const person = {
+  name: "Ivan",
+  age: 22,
+  job: "work",
+  salary: 1000,
+  retired: true,
+};
 
-const a4 = ["Київ", "Харьків", "Львів", "Маріуполь", "Львів"];
-const r4 = a4.indexOf("Львів");
-console.log("\n//4. .indexOf() індекс першого елемента Львів", a4, "\n", r4);
-
-//5. .lastIndexOf() Знайдіть індекс останньої зустрічі числа 8 в масиві чисел
-
-const a5 = [0, 8, 7, 1, 8];
-const r5 = a5.lastIndexOf(8);
-console.log("\n//5. .lastIndexOf() індекс останньої 8", a5, "\n", r5);
-
-//6. .sort() Відсортуйте масив імен в зворотньому алфавітному порядку
-
-const a6 = ["cccc", "dddd", "aaaa", "bbbbb"];
-a6.sort().reverse(); //модифікував отсортувавши та перевернувши оригінальний масив
-console.log("\n//6. .sort() в зворотньому алфавітному порядку", a6);
-
-//7. .reverse() Переверніть порядок елементів у масиві чисел
-
-const a7 = [0, 8, 7, 1, 8];
-a7.reverse();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-console.log("\n//7. .lastIndexOf() Переверніть порядок\n[0, 8, 7, 1, 8]", a7);
-
-//8. .filter() Відфільтруйте масив чисел, залишивши тільки ті, що діляться на 5
-
-const a8 = [456, 8, 10, 55, 865, 7, 67];
-const r8 = a8.filter((e) => e % 5 === 0);
-console.log("\n//8. .filter() залишивши, що діляться на 5", a8, "\n", r8);
-
-//9. .some() Перевірте, чи є в масиві чисел хоча б одне число більше за 555
-
-const a9 = [456, 8, 10, 55, 865, 7, 67];
-co                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        nst r9 = a9.some((e) => e > 555);
-console.log("\n//9. .some() хоча б одне число більше за 555", a9, "\n", r9);
-
-//10. .every() Перевірте, чи всі елементи в масиві чисел є парними
-
-const a10 = [456, 8, 10, 55, 865, 7, 67];
-const r10 = a10.every((e) => e % 2 === 0);
-console.log("\n//10. .some() хоча б одне число більше за 555", a10, "\n", r10);
-
-//11. .includes() Перевірте, чи містить масив імен ім'я "Ярослав"
-
-const a11 = ["Олена", "Петро", "Степан", "Ярослав"];
-const r11 = a11.includes("Ярослав");
-console.log("\n//11. .include() чи містить масив ім'я Ярослав", a11, "\n", r11);
-
-//12. .flat() Вирівняйте масив масивів чисел в один рівень
-
-const a12 = [6, [7, [8, [9, [10]]]]];
-const r12 = a12.flat(Infinity);
-console.log(
-  "\n//12. .flat() Вирівняйте масив масивів в один рівень\n[6,[7,[8,[9,[10]]]]]",
-  "\n",
-  r12
+const person2 = Object.create(
+  {},
+  {
+    name: {
+      value: "Stepan",
+    },
+    retired: {
+      value: false,
+    },
+  }
 );
 
-//13. .concat() Об'єднайте два масиви імен в один
+console.log(person);
+console.log(person2);
 
-const a13 = ["Олена", "Петро"];
-const b13 = ["Степан", "Ярослав"];
-const r13 = a13.concat(b13);
+const ob1 = Object.assign({ a: 22 }, { b: 33 });
+console.log(ob1);
+
+const ob2 = Object.assign(person, { hello: "greeting" });
+console.log(ob2);
+
+const ob3 = Object.assign({}, person); //copy
+ob3.age = 33;
+delete ob3.retired;
+console.log("-----copy obj----");
+
+console.log(person);
+console.log(ob3);
+
+console.log(Object.getOwnPropertyDescriptors(person2));
+
+console.log(Object.getOwnPropertyNames(person2));
+
+console.log(obj3.hasOwnProperty("hasOwnProperty"));
+////////////////MATH//////////////
+
+let a1 = Math.min(5, 7, 3, 5, 9, 5);
+console.log(a1);
+
+let a2 = Math.max(5, 7, 3, 5, 9, 5);
+console.log(a2);
+
+console.log(Math); //show all math methods
+let b1 = Math.sin(0.5);
+console.log(b1);
+
+let b2 = Math.log(3);
+console.log(b2);
+
+let b3 = Math.sqrt(25);
+console.log(b3);
+
+let b4 = Math.pow(2, 4);
+console.log(b4);
+
+let b5 = Math.round(0.5);
+console.log(b5);
+
+let b6 = Math.ceil(0.001);
+console.log(b6);
+
+let b7 = Math.floor(0.999);
+console.log(b7);
+
+let b8 = Math.round(Math.random() * 10); // 0 - 10
+console.log(b8);
+
+let arr1 = [1, 3, 5, 6, 8, 1, 4, 5, 3, 15, 19, 20, 11, [11, [true]]];
 console.log(
-  '\n//13. .concat() \n["Олена", "Петро"] + ["Степан", "Ярослав"]\n',
-  r13
+  "\n//1 завдання\n[1, 3, 5, 6, 8, 1, 4, 5, 3, 15, 19, 20 11, [11, [true]]\n"
 );
 
-//14. .entries() роблю ітератор і вивожу пари [індекс,значення]
-console.log(
-  "\n//14. .entries() роблю ітератор і вивожу пари [індекс,значення]\n",
-  r13
+//reverse()
+arr1.reverse(); //цей методд мутує масив
+console.log("reverse()", arr1);
+arr1.reverse(); //в первинний вигляд масив вернув
+
+//flat()
+let arrTemp = arr1.flat();
+console.log("flat()", arrTemp);
+
+//includes()
+let boolTemp = arr1.includes(5);
+console.log("includes(5)", boolTemp);
+
+//join()
+arrTemp = arr1.join(["\\_/"]);
+console.log("join()", arrTemp);
+
+//map()
+arrTemp = arr1.map((el) =>
+  typeof el === "number" ? "element: " + el * 2 : el
 );
-const a14 = ["Олена", "Петро", "Степан", "Ярослав"];
-const iter = a14.entries();
-for (let [ind, el] of iter) {
-  console.log(ind, el);
-}
+console.log("map()", arrTemp);
 
-//15. .toString() Перетворіть масив чисел у строку
+//reduce()
+temp = arr1.reduce((acc, el) => {
+  if (typeof el === "number") acc += el;
+  return acc;
+}, 0);
+console.log("reduce()", temp);
 
-const a15 = [5, 6, 7, 8, 9, 10];
-const r15 = a15.toString();
-console.log("\n//15. .toString() масив чисел у строку", a15, "\n", r15);
+//2. рядок: 'Hello world and my dear friend ...'
+// Застосувати методи
 
-//16. .map() Створіть новий масив, у якому кожне число
-//           з оригінального масиву буде помножене на 100
+console.log("//2. \nрядок: 'Hello world and my dear friend ...' ");
 
-const a16 = [45.6, 0.008, 10, 55, 865, 7.9, 67];
-const r16 = a16.map((e) => e * 100);
-console.log("\n//16. . ", a16, "\n", r16);
+let str2 = "Hello world and my dear friend ...";
+
+// split()
+temp = str2.split(" ");
+console.log(temp);
+
+//trim()
+let strTemp = "  Hello!  ";
+temp = strTemp.trim();
+console.log("trim():\n", temp + temp + temp); //без пробілов
+
+//toLocaleUpperCase()
+temp = str2.toLocaleUpperCase();
+console.log("toLocaleUpperCase()\n", temp);
+
+//toLocaleLowerCase()
+temp = str2.toLocaleLowerCase();
+console.log("toLocaleLowerCase()\n", temp);
+
+//charAt()
+temp = str2.charAt(0);
+console.log("charAt() [0]\n ", temp);
+
+//charCodeAt()
+temp = str2.charCodeAt(0);
+console.log("charCodeAt() [0]'H'\n ", temp);
+
+//includes()
+temp = str2.includes("He");
+console.log("includes() 'He'\n ", temp);
+
+//concat()
+temp = str2.concat(" Hey");
+console.log("concat() +' Hey'\n ", temp);
+
+//search()
+temp = str2.search("l");
+console.log("search() 'l'\n ", temp);
+
+//startsWith()
+temp = str2.startsWith("H");
+console.log("startsWith() 'H' ", temp);
+temp = str2.startsWith("5");
+console.log("startsWith() '5' ", temp);
+
+//endsWith()
+temp = str2.endsWith(".");
+console.log("endsWith() '.' ", temp);
+temp = str2.endsWith("!");
+console.log("endsWith() '!' ", temp);
+
+//indexOf()
+temp = str2.indexOf(".");
+console.log("indexOf() '.' ", temp);
+
+//lastIndexOf()
+temp = str2.lastIndexOf(".");
+console.log("lastIndexOf() '.' ", temp);
+
+//replace()
+temp = str2.replace("H", "YYY");
+console.log("replace('H','YYY')", temp);
