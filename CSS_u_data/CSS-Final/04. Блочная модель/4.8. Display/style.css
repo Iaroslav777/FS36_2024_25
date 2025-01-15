@@ -1,0 +1,39 @@
+.block-level {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inline-level {
+  display: inline;
+  margin-left: 30px;
+
+  /* Следующие свойства будут игнорироваться для inline элементов */
+
+  /* width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px; */
+}
+
+/* Можно изменять width, height, top/bottom margin для inline-block элементов */
+input,
+button {
+  width: 220px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+img {
+  width: 200px;
+}
+
+.block-input {
+  display: block;
+  background-color: rgb(123, 174, 174);
+}
+
+.div-element {
+  width: 100px;
+  height: 100px;
+  border: 10px solid lightgreen;
+}

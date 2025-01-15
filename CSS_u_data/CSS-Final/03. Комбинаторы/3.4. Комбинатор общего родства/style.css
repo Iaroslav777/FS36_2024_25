@@ -1,0 +1,8 @@
+.greet ~ p {
+  background-color: lightgrey;
+}
+
+h2 ~ button {
+  color: darkblue;
+  margin: 10px;
+}

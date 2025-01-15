@@ -1,0 +1,17 @@
+.coloredBg {
+  width: 150px;
+  height: 100px;
+  background-color: blue;
+}
+
+/* высота автоматически рассчитывается в соответствии
+ с содержимым элемента p */
+p {
+  width: 300px;
+  background-color: yellow;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+}

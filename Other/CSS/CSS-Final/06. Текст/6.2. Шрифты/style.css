@@ -1,0 +1,11 @@
+body {
+  margin: 50px;
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif, Times;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: justify;
+}

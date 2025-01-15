@@ -1,0 +1,11 @@
+[data-category="main"] {
+  background-color: lightsalmon;
+}
+
+[heading-type="primary"] {
+  color: darkred;
+}
+
+[heading-type="secondary"] {
+  color: darkgreen;
+}

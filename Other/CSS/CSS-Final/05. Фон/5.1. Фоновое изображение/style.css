@@ -1,0 +1,28 @@
+.bg-image {
+  background-image: url("https://picsum.photos/id/50/200");
+  width: 200px;
+  height: 200px;
+}
+
+.bg-small {
+  background-image: url("https://picsum.photos/id/43/200");
+  width: 350px;
+  height: 350px;
+  border: 1px solid gray;
+}
+
+.bg-repeat-off {
+  background-repeat: no-repeat;
+  width: 300px;
+}
+
+.bg-repeat-no-crop {
+  background-repeat: round;
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 25px;
+  padding: 20px;
+}

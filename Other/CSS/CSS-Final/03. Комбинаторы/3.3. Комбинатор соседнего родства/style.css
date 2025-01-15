@@ -1,0 +1,8 @@
+.greet + p {
+  background-color: burlywood;
+}
+
+h1 + h2 {
+  color: darkred;
+  background-color: aquamarine;
+}

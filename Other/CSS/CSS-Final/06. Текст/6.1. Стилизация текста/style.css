@@ -1,0 +1,112 @@
+html {
+  /* Default 16px */
+  font-size: 20px;
+}
+
+body {
+  margin: 30px;
+  font-size: 25px;
+}
+
+/* p {
+  width: 750px;
+} */
+
+.text-color {
+  color: blue;
+}
+
+/*********************************************/
+
+.text-italic {
+  font-style: italic;
+}
+
+/*********************************************/
+
+.text-bold {
+  font-weight: bold;
+  /* или */
+  /* font-weight: 700; */
+}
+
+/*********************************************/
+
+.text-large {
+  font-size: 2rem; /* 2 * 20px = 40px */
+  width: 100%;
+}
+
+/*********************************************/
+
+/* класс, позволяющий увеличить размер шрифта на 50% */
+.text-medium {
+  font-size: 1.5em; /* 1.5 * 25px = 37.5px */
+}
+
+.text-line-space {
+  line-height: 1.8; /* умножается на размер шрифта */
+}
+
+/*********************************************/
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/*********************************************/
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  /* text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px; */
+
+  /* или сокращенное свойство */
+  text-decoration: line-through dashed red 3px;
+}
+
+/*********************************************/
+
+.text-left,
+.text-center,
+.text-right {
+  background-color: gold;
+  padding: 20px;
+  border: 5px solid lightseagreen;
+}
+
+.text-left {
+  text-align: left; /* default */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justified {
+  width: 75%;
+  text-align: justify;
+}
+
+.list {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: green;
+}

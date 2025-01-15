@@ -1,0 +1,79 @@
+body {
+  margin: 30px;
+}
+
+.gridContainer {
+  margin-top: 25px;
+  font-size: 1.5rem;
+
+  display: grid;
+  grid-template-rows: repeat(4, 150px);
+  /* 4 ряда и 4 колонки */
+  grid-template-areas:
+    "header   header header header"
+    "left     main   main   right"
+    "left     main   main   right"
+    "footer   footer footer footer";
+}
+
+.box {
+  background-color: cornflowerblue;
+  border: 2px solid darkblue;
+  padding: 20px;
+}
+
+.topbar {
+  grid-area: header;
+}
+
+.left-side {
+  grid-area: left;
+  background-color: darkturquoise;
+}
+
+.right-side {
+  grid-area: right;
+  background-color: rgb(167, 209, 0);
+}
+
+.main-content {
+  grid-area: main;
+  background-color: salmon;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: plum;
+}
+
+@media (max-width: 800px) {
+  .gridContainer {
+    grid-template-rows: repeat(4, 140px);
+
+    /* 4 ряда и 3 колонки */
+    grid-template-areas:
+      "header   header header"
+      "left     main   main  "
+      "left     main   main  "
+      "footer   footer footer";
+  }
+
+  .gridContainer > :nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .gridContainer {
+    grid-template-rows: repeat(6, 130px);
+
+    /* 6 рядов и 1 колонка */
+    grid-template-areas:
+      "header"
+      "left"
+      "main"
+      "main"
+      "main"
+      "footer";
+  }
+}

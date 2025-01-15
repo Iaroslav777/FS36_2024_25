@@ -1,0 +1,18 @@
+body {
+  margin: 40px;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+p::first-letter {
+  color: green;
+  font-size: 3rem;
+}
+
+p::first-line {
+  font-style: italic;
+  color: rgb(104, 159, 104);
+}

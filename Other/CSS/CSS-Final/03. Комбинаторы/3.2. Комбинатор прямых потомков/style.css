@@ -1,0 +1,8 @@
+div > p {
+  background-color: cyan;
+}
+
+.heading > #myHeading {
+  color: darkblue;
+  font-size: 25px;
+}

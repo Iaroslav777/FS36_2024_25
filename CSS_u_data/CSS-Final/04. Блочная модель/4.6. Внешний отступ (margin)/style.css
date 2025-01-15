@@ -1,0 +1,41 @@
+/*
+Некоторые элементы имеют отступ по умолчанию
+Убрать его можно, установив значение margin равным нулю.
+
+Некоторые примеры элементов с отступом по умолчанию:
+- элемент параграфа (p)
+- заголовки (от h1 до h6)
+- body
+*/
+/* h1,
+body,
+p {
+  margin: 0;
+} */
+
+/* Универсальный селектор для всех элементов */
+* {
+  margin: 0;
+}
+
+img {
+  margin: 25px 0 15px 30px; /* top | right | bottom | left */
+  padding: 10px;
+  background-color: brown;
+  /* или */
+
+  /*
+  margin-top: 25px;
+  margin-right: 0;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  */
+}
+
+h1 {
+  margin: 25px;
+}
+
+p {
+  margin: 10px;
+}

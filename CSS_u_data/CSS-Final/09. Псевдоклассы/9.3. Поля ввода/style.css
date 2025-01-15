@@ -1,0 +1,23 @@
+body {
+  margin: 30px;
+}
+
+input {
+  width: 250px;
+  font-size: 1.5rem;
+  padding: 12px 25px;
+  margin-top: 25px;
+  margin-right: 12px;
+  border: 3px solid gray;
+  outline: none;
+}
+
+input:invalid {
+  border-color: red;
+  color: red;
+}
+
+input:valid {
+  border-color: green;
+  color: green;
+}
