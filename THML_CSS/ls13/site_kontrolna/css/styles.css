@@ -1,0 +1,249 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #006400;
+}
+
+.right-icons {
+  display: flex;
+  gap: 10px; /* Расстояние между бургер-меню и человечком */
+  align-items: center;
+}
+
+.menu-icon,
+.user-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.main-section {
+  text-align: center;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.sub-section {
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+}
+
+.text-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skewed-ellipse {
+  position: absolute;
+  top: 8px;
+  left: 17%;
+  transform: translateX(-50%) rotate(-10deg);
+  width: 42px;
+  height: 18px;
+  background-color: #006400;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.ellipse-text {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 8px;
+  /* transform: rotate(10deg); Возвращаем текст в нормальное положение */
+}
+
+.main-text {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  /* padding-top: 50px; /*Чтобы текст не перекрывался эллипсом */
+}
+
+.images-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.image-container {
+  width: 45%; /* Ширина для картинок */
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.image-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.rounded-image {
+  width: 57px; /* Ширина картинки */
+  height: auto; /* Высота картинки */
+  border-radius: 50pc;
+  object-fit: cover; /* Масштабируем изображение, сохраняя пропорции */
+}
+
+.image-overlay-container {
+  position: relative; /* Контейнер для позиционирования */
+  width: 100%; /* Ширина контейнера */
+
+  margin: 0 auto; /* Центрируем блок */
+}
+/* &#9654; знак стрелки*/
+.image2-mobile-container {
+  position: relative; /* Контейнер для позиционирования */
+  width: 100%; /* Ширина контейнера */
+
+  margin: 0 auto; /* Центрируем блок */
+}
+.facilities2 {
+  font-family: Arial, sans-serif;
+  color: white;
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.facilities2 p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.facilities2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facilities2 li {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.arrow {
+  color: white;
+  margin-right: 8px;
+}
+
+.background-image {
+  width: 100%; /* Задаём ширину фона */
+  height: auto; /* Сохраняем пропорции */
+}
+
+.overlay-image1 {
+  position: absolute; /* Располагаем поверх фона */
+  top: 10%; /* Смещаем по вертикали */
+  right: -5%; /* Смещаем по горизонтали */
+  transform: translate(-50%, -50%); /* Центрируем по центру контейнера */
+  width: 20%; /* Размер накладываемой картинки */
+  height: auto; /* Размер накладываемой картинки */
+  border-radius: 50%; /* Закругляем края */
+  background-color: #000; /* Цвет фона (если нужен) */
+}
+
+.book {
+  position: absolute;
+  bottom: 52%;
+  left: 25%;
+  background-color: #fff;
+  padding: 6%;
+
+  border-radius: 50pc;
+  color: rgb(40, 56, 51);
+  font-size: 130%;
+}
+
+.fal {
+  position: absolute;
+  bottom: -72%;
+  left: 25%;
+  /* background-color: #fff; */
+  padding: 6%;
+
+  /* border-radius: 50pc; */
+  color: rgb(255, 255, 255);
+  font-size: 130%;
+}
+.facilities2 {
+  list-style-type: none;
+  position: absolute;
+  bottom: -95%;
+  left: 25%;
+  /* background-color: #fff; */
+  padding: 6%;
+
+  /* border-radius: 50pc; */
+  color: rgb(255, 255, 255);
+  font-size: 130%;
+}
+.member1 {
+  position: absolute;
+  bottom: 36%;
+  left: 20%;
+  align-self: center;
+  border-color: #fff;
+
+  padding: 6%;
+  border-radius: 10%;
+
+  border: 3px solid #fff;
+  border-radius: 50pc;
+  color: rgb(255, 255, 255);
+  font-size: 130%;
+}
+@media (max-width: 370px) {
+  * {
+    display: none;
+  }
+}
+
+@media (min-width: 435px) {
+  #mobile {
+    display: none; /* Мобильная шапка скрывается на больших экранах */
+  }
+}
+@media (min-width: 435px) {
+  .mobile-header {
+    display: none; /* Мобильная шапка скрывается на больших экранах */
+  }
+}
