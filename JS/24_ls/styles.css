@@ -1,0 +1,31 @@
+.cube {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.text-block {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.outer {
+  padding: 10px;
+  background: lightgrey;
+}
+
+.middle {
+  padding: 10px;
+  background: grey;
+}
+
+.inner {
+  padding: 10px;
+  background: darkgrey;
+}
+
+.form {
+  margin: 20px;
+}

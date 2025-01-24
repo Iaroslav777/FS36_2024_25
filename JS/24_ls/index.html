@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Tasks</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--1 -->
+    <div class="cube" id="first-cube" style="background-color: red"></div>
+    <div class="cube" id="second-cube" style="background-color: blue"></div>
+
+    <!--2 -->
+    <div id="text-block" class="text-block">
+      Це текстовий блок. Спробуйте скопіювати цей текст.
+    </div>
+
+    <!--3 -->
+    <div class="cube" id="color-cube"></div>
+
+    <!--4 -->
+    <div class="outer" id="outer-cube">
+      Outer Cube
+      <div class="middle" id="middle-cube">
+        Middle Cube
+        <div class="inner" id="inner-cube">Inner Cube</div>
+      </div>
+    </div>
+
+    <!--5 -->
+    <div class="outer" id="outer-cube-2">
+      Outer Cube
+      <div class="middle" id="middle-cube-2">
+        Middle Cube
+        <div class="inner" id="inner-cube-2">Inner Cube</div>
+      </div>
+    </div>
+
+    <!--6 -->
+    <form id="test-form" class="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+
+    <pre>
+    * Розділяти всі завдання коментарями і писати що треба робити в завданні.
+
+    1. Створити 2 кубіка, при кліку на перший: другий повинен змінювати свій колір на рандомний.
+
+    2. Створити текстовий блок, при спробі його скопіювати покажіть користувачу вікно "Текст неможливо скопіювати!!".
+
+    3. Створити кубік 100х100 який міняє свій колір в залежності від того на яких координатах ви знаходитесь 
+       (r - X координата, g - Y координата, b - середнє арифметичне X+Y/2).
+
+    4. Створіть 3 кубіка один в одному які будуть при кліку виводити щось про себе в консоль
+
+    5. Створіть ще 3 кубіка які є один в одному, змініть напрямок виконання івенту, 
+       зупиніть виконання івентів на другому івенті (Див. лекцію).
+
+    6. Використайте будь яку форму з домашної про форми (в модулі HTML\CSS), та отримайте дані з неї у вигляді об'єкту,
+       виведіть об'єкт форми в консоль. Відмініть поведінку за замовчуванням для кнопки submit у формі (Див. лекцію).
+    </pre>
+  </body>
+</html>
