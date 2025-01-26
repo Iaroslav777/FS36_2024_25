@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home work 27</title>
+    <style>
+      /* CSS для анімації */
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: relative;
+      }
+
+      .animate {
+        animation: move 2s linear forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Домашнє завдання №27</h1>
+    <p>Дослідження асинхронності та Event Loop у JavaScript.</p>
+
+    <button id="animateBtn">Запустити анімацію</button>
+    <div class="box" id="box"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
