@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Хрестики-Нулики з видаленням</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Вибір режиму та логінів -->
+    <div class="modal" id="startModal">
+      <div class="modal-content">
+        <h2>Обрати режим гри</h2>
+        <select id="gameMode">
+          <option value="last">Видалення останнього</option>
+          <option value="random">Видалення випадкового</option>
+        </select>
+
+        <div class="players">
+          <input type="text" id="player1" placeholder="Логін гравця 1" />
+          <input type="text" id="player2" placeholder="Логін гравця 2" />
+        </div>
+
+        <button id="startBtn">Почати гру</button>
+      </div>
+    </div>
+
+    <!-- Заголовок та опис -->
+    <header>
+      <h1 id="gameTitle">Хрестики-Нулики</h1>
+      <p id="gameDescription">Виберіть режим і введіть логіни гравців...</p>
+    </header>
+
+    <!-- Ігрове поле 3x3 -->
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <!-- Інформаційна панель -->
+    <div class="info-panel">
+      <p>Хід гравця: <span id="currentPlayerLabel"></span></p>
+      <p>
+        Залишилось ходів у <span id="player1NameLabel"></span>:
+        <span id="player1MovesLeft">20</span>
+      </p>
+      <p>
+        Залишилось ходів у <span id="player2NameLabel"></span>:
+        <span id="player2MovesLeft">20</span>
+      </p>
+    </div>
+
+    <!-- Таблиці лідерів -->
+    <div class="leaderboards">
+      <div class="leaderboard">
+        <h2>ТОП «Видалення останнього»</h2>
+        <ol id="leaderboardLast"></ol>
+      </div>
+      <div class="leaderboard">
+        <h2>ТОП «Видалення випадкового»</h2>
+        <ol id="leaderboardRandom"></ol>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

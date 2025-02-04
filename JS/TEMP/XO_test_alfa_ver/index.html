@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Хрестики-Нулики з перевіркою на mouseup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="info-panel">
+      <p>Хід гравця: <span id="currentPlayerLabel"></span></p>
+      <p>Ходи (X): <span id="xMovesLeft">20</span></p>
+      <p>Ходи (O): <span id="oMovesLeft">20</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
