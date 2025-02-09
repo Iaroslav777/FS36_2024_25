@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #34ffe7;
+  color: #87029e;
+}
+
+/* вікно для старту */
+.okno {
+  /* font-size: 2rem; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(131, 21, 21, 0.358);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.okno-danni {
+  background: #cdbea3;
+  padding: 50px 40px;
+  border-radius: 7cap;
+  text-align: center;
+}
+
+.gravci {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.gravci input {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+/* заголовок */
+header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* поле 3x3 */
+.pole {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 0 auto;
+  width: fit-content;
+  background: #c5edc0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* клітинка */
+.klitinka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.klitinka:hover {
+  background: #e9e9e9;
+}
+
+.info-panel {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+.info-panel p {
+  margin: 5px 0;
+}
+
+.paneli {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.panel {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+}
+.panel h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.panel ol {
+  list-style: none;
+  padding: 0;
+}
+.panel li {
+  margin-bottom: 5px;
+}
+
+/* Поки не обрали режим, ховаємо основний інтерфейс */
+.pole,
+.info-panel,
+.paneli {
+  display: none;
+}
