@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "english": "Hello",
+    "ukrainian": "Привіт",
+    "learned": false
+  },
+  {
+    "id": "2",
+    "english": "Goodbye",
+    "ukrainian": "До побачення",
+    "learned": false
+  },
+  {
+    "id": "3",
+    "english": "Thank you",
+    "ukrainian": "Дякую",
+    "learned": true
+  }
+]

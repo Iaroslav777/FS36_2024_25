@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Додаткові стилі для теми */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Стилі для світлої теми (за замовчуванням) */
+.light {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Стилі для темної теми */
+.dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+/* Додаткові стилі для кнопок, форм тощо */
+button,
+input[type="text"],
+textarea {
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+/* Для плавного переходу кольорів при зміні теми */
+.transition-colors {
+  transition-property: background-color, color, border-color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
