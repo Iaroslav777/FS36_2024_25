@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-global-objects",
+  "version": "1.0.0",
+  "description": "Домашнє завдання з Node.js: Глобальні об'єкти та функції",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "greet": "node index.js greet",
+    "register": "node index.js register",
+    "login": "node index.js login",
+    "set-storage": "node index.js set-storage",
+    "get-storage": "node index.js get-storage",
+    "remove-storage": "node index.js remove-storage",
+    "env-info": "node index.js env-info",
+    "set-username": "node index.js set-username",
+    "get-username": "node index.js get-username",
+    "reset-users": "node index.js --reset",
+    "print-logs": "node index.js print-logs"
+  },
+  "keywords": [],
+  "author": "Ярослав Бабік",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5"
+  }
+}
