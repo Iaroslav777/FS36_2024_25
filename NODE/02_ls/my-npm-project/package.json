@@ -1,0 +1,17 @@
+{
+  "name": "my-npm-project",
+  "version": "1.0.0",
+  "description": "Проект для демонстрації NPM",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "greet": "node app.js greet-author"
+  },
+  "keywords": [],
+  "author": "Ваше Ім'я",
+  "license": "ISC",
+  "projectAuthor": "Ярослав Бабік",
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
+}
