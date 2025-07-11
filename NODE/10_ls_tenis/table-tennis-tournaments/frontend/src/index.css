@@ -1,0 +1,13 @@
+/* Імпортуємо базові стилі Tailwind CSS.
+   Ця директива автоматично підтягує всі необхідні утиліти Tailwind. */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Додаткові глобальні стилі, якщо потрібні.
+   Наприклад, встановлення шрифту для всього додатку. */
+body {
+  font-family: "Inter", sans-serif; /* Використовуємо шрифт Inter, якщо він доступний */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

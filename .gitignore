@@ -1,0 +1,21 @@
+    # Node.js
+    node_modules/
+    .env
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
+    .pnp/
+    .pnp.js
+
+    # Build artifacts
+    build/
+    dist/
+    out/
+
+    # IDE and OS files
+    .idea/        # Для WebStorm/IntelliJ IDEA
+    .vscode/      # Для VS Code (якщо не хочете ділитися налаштуваннями)
+    *.iml         # Для IntelliJ IDEA
+    .DS_Store     # macOS
+    Thumbs.db     # Windows
+    
