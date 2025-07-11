@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин Продуктів</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        color: #333;
+      }
+      .product-card {
+        background-color: #fff;
+        border-radius: 0.75rem; /* rounded-xl */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+        transition: transform 0.2s ease-in-out;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="p-6">
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
+      <h1 class="text-4xl font-extrabold text-center text-blue-700 mb-8">
+        Магазин Продуктів
+      </h1>
+
+      <!-- Сортування -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <button
+          id="sortByNameBtn"
+          class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200"
+        >
+          Сортувати за назвою
+        </button>
+        <button
+          id="sortByPriceAscBtn"
+          class="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition-colors duration-200"
+        >
+          Сортувати за ціною (зростання)
+        </button>
+        <button
+          id="sortByPriceDescBtn"
+          class="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition-colors duration-200"
+        >
+          Сортувати за ціною (спадання)
+        </button>
+      </div>
+
+      <!-- Повідомлення -->
+      <div
+        id="messageContainer"
+        class="text-center text-lg font-medium mb-6"
+      ></div>
+
+      <!-- Контейнер для продуктів -->
+      <div
+        id="productsContainer"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Продукти будуть завантажені сюди JavaScript'ом -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
