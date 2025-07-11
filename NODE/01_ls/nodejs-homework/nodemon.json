@@ -1,0 +1,5 @@
+{
+  "watch": ["*.json", "*.md", "main.js"],
+  "exec": "node main.js",
+  "ext": "js,json,md"
+}

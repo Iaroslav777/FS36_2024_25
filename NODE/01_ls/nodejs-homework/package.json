@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-homework",
+  "version": "1.0.0",
+  "description": "Домашнє завдання з Node.js (всі завдання в одному файлі)",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "read-author": "node main.js read-author",
+    "dev": "nodemon main.js",
+    "create-log": "node main.js create-log",
+    "greet": "node main.js greet-user",
+    "process": "node main.js process-file",
+    "copy": "node main.js copy-files",
+    "show-time": "node main.js show-time",
+    "test-logger": "node main.js test-logger"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "projectAuthor": "Ярослав Бабік",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.11",
+    "nodemon": "^3.1.4"
+  }
+}
